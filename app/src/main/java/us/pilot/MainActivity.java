@@ -2,6 +2,7 @@ package us.pilot;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -11,7 +12,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    protected void test(){
-        int ii = 1 + 1;
+    public void playGame(View v){
+        setContentView(R.layout.game);
+    }
+
+    public void gamePlay(){
+        int castleHealth = 20;
+        int wallHealth = 10;
+
     }
 }
